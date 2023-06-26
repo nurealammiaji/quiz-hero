@@ -183,3 +183,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// Blog Code
+document.querySelector("#blog-btn").addEventListener("click", () => {
+  console.log("blog button clicked");
+})
