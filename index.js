@@ -187,4 +187,5 @@ document.querySelector("#submit").addEventListener("click", () => {
 // Blog Code
 document.querySelector("#blog-btn").addEventListener("click", () => {
   console.log("blog button clicked");
+  window.location.href = "./blog.html";
 })

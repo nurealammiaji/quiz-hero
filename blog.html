@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                common: ["Rubik", "sans-serif"],
+              },
+            },
+          },
+        };
+      </script>
+    <title>Blog | Quiz Hero</title>
+</head>
+<body>
+        <!-- Header/Navbar section start -->
+        <header class="flex items-center h-16 shadow-sm">
+            <nav class="flex items-center justify-between w-9/12 mx-auto">
+              <div class="font-bold uppercase text-zinc-800">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                  Get ready to Quiz and be amazed!
+                </p>
+              </div>
+              <h1 class="text-lg">Blog</h1>
+              <button id="home-btn" class="px-5 py-1 text-sm font-light text-white bg-green-600 rounded">Home</button>
+            </nav>
+          </header>
+          <script>
+            document.getElementById("home-btn").addEventListener("click", () => {
+                window.location.href = "./index.html";
+            } )
+          </script>
+</body>
+</html>
