@@ -32,24 +32,41 @@
             </nav>
           </header>
           <main>
-            <div class="grid grid-cols-2 gap-4 m-3 mt-5">
+            <!-- Blog Posts Area -->
+            <div class="grid grid-cols-1 gap-4 m-3 mt-5 md:grid-cols-2">
+                <!-- Blog Post 1-->
                 <div class="p-2 border border-green-300 border-solid rounded hover:border-green-600 hover:bg-green-200">
-                    <h1 class="mt-2 text-lg font-medium text-center">Blog Title</h1>
+                    <h1 class="mt-2 text-lg font-medium text-center">Difference in map, filter, forEach & find</h1>
+                    <hr class="my-2">
+                    <p class="mt-2 text-justify">"map" creates a new array by transforming each element, "filter" creates a new array by selecting elements that match a condition, "forEach" iterates over an array and performs an action for each element, and "find" returns the first element that matches a condition.</p>
+                </div>
+                <!-- Blog Post 2-->
+                <div class="p-2 border border-green-300 border-solid rounded hover:border-green-600 hover:bg-green-200">
+                    <h1 class="mt-2 text-lg font-medium text-center">Difference in  localStorage, sessionStorage & cookies</h1>
+                    <hr class="my-2">
+                    <p class="mt-2 text-justify">"localStorage" and "sessionStorage" are web storage APIs that store data locally in the user's browser, with "localStorage" persisting data across sessions and "sessionStorage" being limited to the current session. "Cookies", on the other hand, are small text files stored by the browser primarily used for sending data back to the server with subsequent requests.</p>
+                </div>
+                <!-- Blog Post 3-->
+                <div class="p-2 border border-green-300 border-solid rounded hover:border-green-600 hover:bg-green-200">
+                    <h1 class="mt-2 text-lg font-medium text-center">What is Event Loop</h1>
+                    <hr class="my-2">
+                    <p class="mt-2 text-justify">Using the "Event Loop", JavaScript can efficiently handle asynchronous operations without blocking the main execution thread. This mechanism ensures that time-consuming tasks are processed in the background and that the program remains responsive to user interactions.</p>
+                </div>
+                <!-- Blog Post 4-->
+                <div class="p-2 border border-green-300 border-solid rounded hover:border-green-600 hover:bg-green-200">
+                    <h1 class="mt-2 text-lg font-medium text-center">Purpose of quizTimer() function</h1>
                     <hr class="my-2">
                     <p class="mt-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro sed dignissimos veritatis ad, quisquam numquam nam eius qui corporis minus illum esse odit, dolorem ex in incidunt, repellat mollitia.</p>
                 </div>
+                <!-- Blog Post 5-->
                 <div class="p-2 border border-green-300 border-solid rounded hover:border-green-600 hover:bg-green-200">
-                    <h1 class="mt-2 text-lg font-medium text-center">Blog Title</h1>
-                    <hr class="my-2">
-                    <p class="mt-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro sed dignissimos veritatis ad, quisquam numquam nam eius qui corporis minus illum esse odit, dolorem ex in incidunt, repellat mollitia.</p>
-                </div>
-                <div class="p-2 border border-green-300 border-solid rounded hover:border-green-600 hover:bg-green-200">
-                    <h1 class="mt-2 text-lg font-medium text-center">Blog Title</h1>
+                    <h1 class="mt-2 text-lg font-medium text-center">Purpose of chooseQuiz() function</h1>
                     <hr class="my-2">
                     <p class="mt-2 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro sed dignissimos veritatis ad, quisquam numquam nam eius qui corporis minus illum esse odit, dolorem ex in incidunt, repellat mollitia.</p>
                 </div>
             </div>
           </main>
+          <!-- Event Handler for Home Button -->
           <script>
             document.getElementById("home-btn").addEventListener("click", () => {
                 window.location.href = "./index.html";
